@@ -1,0 +1,188 @@
+
+{
+    "basics": {
+
+      "name": "Marvin Jonathan Gutierrez Alfaro",
+      "label": "Diseñador y programador web con 5 años de experiencia autodidacta entuciasta",
+      "image": "https://avatars.githubusercontent.com/u/146808467?s=400&u=15561395feaf1bf588c22fa5e7de90bb3a230b38&v=4",
+      "email": "mjona5914@gmail.com",
+      "phone": "(505) 5753-3791",
+      "url": "",
+      "summary": "He aprendido de manera auto didacta durante 5 años tecnologias de la web y desarrollo de aplicaciones con framework enfocado en el lenguaje javascript, actualmente me desempeño como docente de programacion en la universidad nacional de Nicaragua UNAN, estoy en constante aprendizaje de nuevas tecnologias",
+
+      "location": {
+        "address": "",
+        "postalCode": "34000",
+        "city": "Somoto, Madriz",
+        "countryCode": "NI",
+        "region": "Nicaragua"
+      },
+
+      "profiles": [
+      {
+        "network": "X",
+        "username": "Mjona9514",
+        "url": "https://x.com/mjona9514"
+      },
+
+      { "network": "GitHub",
+        "username": "Mjona95",
+        "url": "https://github.com/MJona95"
+      },
+
+      { 
+        "network": "LinkedIn",
+        "username": "Mjona95",
+        "url": "https://www.linkedin.com/in/mjona9514/"
+      }
+    ]
+    },
+
+    "work": [{
+      "name": "Inatec Ernesto Che Guevara Somoto",
+      "position": "Docente de Programacion Virtual",
+      "url": "https://company.com",
+      "startDate": "2023-02-01",
+      "endDate": "2023-12-15",
+      "summary": "Desenpeñe la labor de docente de programacion de manera virtual en diversos lengujes como: JavasCript , PHP y Bases de datos MySQL ademas del framework Angualar.js",
+      "highlights": [
+        "Seguimiento mediante herramientas como Trello"
+      ]
+    },
+    {
+      "name": "Unan Leon Sede-Somoto",
+      "position": "Docente de Programacion",
+      "url": "https://company.com",
+      "startDate": "2024-02-01",
+      "endDate": "null",
+      "summary": "Desenpeño la labor de docente de programacion en diversos lengujes como: ASP.net, JavasCript y Bases de datos SQL, SQL Server",
+      "highlights": [
+        "Imparti cursos de Node.js y React.js extra curriculares"
+      ]
+    } 
+  ],
+    "volunteer": [{
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }],
+    "education": [{
+      "institution": "Unan Leon Sede-Somoto",
+      "url": "https://institution.com/",
+      "area": "Ingeniero en Sistemas de informacion",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }],
+    "awards": [{
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }],
+    "certificates": [{
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }],
+    "skills": [{
+      "name": "HTML",
+      "level": "Junior",
+      "keywords": [
+        "Desarrollo web", "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Junior",
+      "keywords": [
+        "Desarrollo web", "Frontend", "Diseño Responsivo"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Junior",
+      "keywords": [
+        "Desarrollo web", "Backend", "Frontend", "Full Stack"
+      ]
+    },
+    {
+      "name": "Astro",
+      "level": "Junior",
+      "keywords": [
+        "Framework", "Frontend"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Junior",
+      "keywords": [
+        "Library", "Frontend", "Aplication web"
+      ]
+    },
+    {
+      "name": "React Native",
+      "level": "Junior",
+      "keywords": [
+        "Movil Aplication"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Junior",
+      "keywords": [
+        "Backend", "JavaSctipt"
+      ]
+    },
+    {
+      "name": "SQL",
+      "level": "Junior",
+      "keywords": [
+        "Backend", "BBDD"
+      ]
+    }
+  ],
+    "languages": [{
+      "language": "Español",
+      "fluency": "Nativo"
+    }],
+    "interests": [{
+      "name": "Vida Saludable",
+      "keywords": [
+        "Buena Alimentacion",
+        "Gym"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }],
+    "projects": [{
+      "name": "Project",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    }]
+  }
