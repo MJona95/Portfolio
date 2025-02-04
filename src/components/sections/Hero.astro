@@ -20,6 +20,8 @@ const SOCIAL_ICONS: Record<string, any> = {
     X,
 }
 
+const printInfo = [email, phone].filter(Boolean).join(" • ")
+
 ---
 
 <Section>
@@ -31,7 +33,10 @@ const SOCIAL_ICONS: Record<string, any> = {
                 <WorldMap />
                 {city}, {region}
             </span>
-            <footer>
+            <footer class="print">
+                    {printInfo}
+            </footer>
+            <footer class="no-print">
                 {
                     email && (
                         <a  href={`mailto:${email}`}
@@ -70,8 +75,8 @@ const SOCIAL_ICONS: Record<string, any> = {
                         )
                     })
                 }
-            </footer>
-        </div>       
+            </footer>  
+        </div>
         <figure>
             <img src={image} alt={name} />
         </figure>
@@ -85,6 +90,12 @@ const SOCIAL_ICONS: Record<string, any> = {
         align-items: center;
         justify-content: space-between;
         gap: 1rem;
+    }
+
+    @media only screen and (max-width: 400px){
+        .container{
+            flex-direction: column-reverse;
+        }
     }
 
     .info{
@@ -126,6 +137,8 @@ const SOCIAL_ICONS: Record<string, any> = {
         display: flex;
         gap: 4px;
         margin-top: 8px;
+        font-size: 0.85rem;
+        color: #555;
     }
 
     footer a {

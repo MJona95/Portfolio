@@ -1,0 +1,68 @@
+---
+import { basics } from "@cv"
+
+const { profiles } = basics
+---
+<footer class="no-print">
+    Pulsa <kbd>Ctrl</kbd> + <kbd>k</kbd> para abrir la paleta de comandos.
+</footer>
+
+<ninja-keys
+    placeholder="Buscar comando" hideBreadcrumbs
+></ninja-keys>
+
+<script>
+    import "ninja-keys"
+
+    const ninja = document.querySelector("ninja-keys")
+
+    if(ninja != null) {
+        ninja.data = [
+        {
+      id: 'Print',
+      title: 'Imprimir',
+      hotkey: 'ctrl+P',
+      section: 'Acciones',
+      handler: () => {
+        window.print()
+      },
+    },
+        ]
+    }
+
+</script>
+
+<style>
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @media print {
+        ninja-keys {
+            display: none !important;
+        }
+    }
+
+    footer {
+        background: #fdfdfd;
+        border-top: 1px solid #eee;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding-block: 8px;
+        text-align: center;
+        
+        view-timeline-name: --revealing;
+        view-timeline-axis: block;
+
+        animation: linear 0.3s fadeIn;
+        animation-timeline: --revealing;
+        animation-range: entry 100% cover 10%;
+    }
+</style>

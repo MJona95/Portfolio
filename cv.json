@@ -8,7 +8,7 @@
       "email": "mjona5914@gmail.com",
       "phone": "(505) 5753-3791",
       "url": "",
-      "summary": "He aprendido de manera auto didacta durante 5 años tecnologias de la web y desarrollo de aplicaciones con framework enfocado en el lenguaje javascript, actualmente me desempeño como docente de programacion en la universidad nacional de Nicaragua UNAN, estoy en constante aprendizaje de nuevas tecnologias",
+      "summary": "Soy egresado de la carrera ingenieria en sistemas posteriormente continue mi aprendisaje de manera auto didacta durante 5 años en tecnologias de la web y desarrollo de aplicaciones con framework enfocado en el lenguaje javascript, actualmente me desempeño como docente de programacion en la universidad nacional de Nicaragua UNAN, estoy en constante aprendizaje de nuevas tecnologias",
 
       "location": {
         "address": "",
@@ -175,14 +175,25 @@
       "name": "Jane Doe",
       "reference": "Reference…"
     }],
-    "projects": [{
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": [
-        "Won award at AIHacks 2016"
-      ],
-      "url": "https://project.com/"
-    }]
+    "projects": [
+      {
+        "name": "BussApp",
+        "isActive": false,
+        "description": "Aplicacion con informacion sobre el transporte publico de la ciudad de Somoto",
+        "highlights": [
+          "Experiencia de viaje gratificante"
+        ],
+        "url": "https://github.com/MJona95/BussApp"
+      },
+      {
+        "name": "Farmacia Alfaro",
+        "isActive": true,
+        "description": "Single page de un negocio familiar de la ciudad de somoto",
+        "highlights": [
+          "Salud y bienestar social"
+        ],
+        "url": "https://github.com/MJona95/Farmacia-Alfaro"
+      }
+  
+  ]
   }
