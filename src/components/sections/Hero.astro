@@ -9,6 +9,16 @@ import LinkedIn from '@/icons/LinkedIn.astro'
 import X from '@/icons/X.astro'
 import WorldMap from '@/icons/WorldMap.astro'
 
+// 👇 idioma (puede venir de params luego)
+const lang = (Astro.params.lang || "es") as "es" | "en";
+
+// 👇 función mágica
+const t = (value: any) => {
+  if (value && typeof value === "object" && value[lang]) {
+    return value[lang] as string;
+  }
+  return value;
+};
 
 const { name, label, image, location, profiles, phone, email } = basics;
 
@@ -28,7 +38,7 @@ const printInfo = [email, phone].filter(Boolean).join(" • ")
     <div class="container">
         <div class="info">
             <h1>{name}</h1>
-            <h2>{label}</h2>
+            <h2>{t(label)}</h2>
             <span>
                 <WorldMap />
                 {city}, {region}
@@ -40,7 +50,10 @@ const printInfo = [email, phone].filter(Boolean).join(" • ")
                 {
                     email && (
                         <a  href={`mailto:${email}`}
-                            title={`Enviar un correo electronico a ${name} al correo ${email}`}
+                            title={t({
+                                es: `Enviar un correo electronico a ${name} al correo ${email}`,
+                                en: `Send an email to ${name} at ${email}`,
+                            })}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -50,8 +63,11 @@ const printInfo = [email, phone].filter(Boolean).join(" • ")
                 }
                 {
                     phone && (
-                        <a  href={`tel:${email}`}
-                            title={`Llamar por telefono a ${name} al numero ${phone}`}
+                        <a  href={`tel:${phone}`}
+                            title={t({
+                                es: `Llamar a ${name} al numero ${phone}`,
+                                en: `Call ${name} at ${phone}`,
+                            })}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -68,7 +84,7 @@ const printInfo = [email, phone].filter(Boolean).join(" • ")
                                 href={url}
                                 title={`Visitar el perfil ${name} en ${network}`}
                                 target="_blank"
-                                rel="nooper noreferrer"
+                                rel="noopener noreferrer"
                             >
                                 <Icon />
                             </a>

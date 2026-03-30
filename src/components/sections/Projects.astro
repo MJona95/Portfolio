@@ -1,32 +1,43 @@
 ---
 import Section from "../Section.astro";
-
 import { projects } from "@cv"
+
+const lang = (Astro.params.lang || "es") as "es" | "en";
+
+const t = (value: any) => {
+  if (value && typeof value === "object" && value[lang]) {
+    return value[lang] as string;
+  }
+  return value;
+};
 ---
 
-<Section title="Proyectos">
+<Section title={t({ es: "Proyectos", en: "Projects" })}>
     <ul>
         {
-            projects.map(({url, description, highlights, name, isActive}) => {
+            projects.map(({url, description, highlights = [], name, isActive}) => {
                 return(
                     <li>
                         <article>
                             <header>
                                 <h3>
-                                    <a href={url} title={`Ver el repositorio del proyecto ${name}`}>
+                                    <a href={url} title={t({
+                                        es: `Ver el repositorio del proyecto ${name}`,
+                                        en: `View the project repository ${name}`
+                                    })}>
                                         {name}
                                     </a>
                                     {
                                         isActive && <span>&bull;</span>
                                     }
                                 </h3>
-                                <p>{description}</p>
+                                <p>{t(description)}</p>
                             </header>
                             <footer>
                                     {
                                         highlights.map(highlight => {
                                             return(
-                                                <span>{highlight}</span>
+                                                <span>{t(highlight)}</span>
                                             )
                                         })
                                     }

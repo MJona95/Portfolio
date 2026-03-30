@@ -1,16 +1,25 @@
 ---
 import Section from "@/components/Section.astro";
-
-
 import { work } from "@cv"
 
----
+const lang = (Astro.params.lang || "es") as "es" | "en";
 
-<Section title="Experiencia Laboral">
+const t = (value: any) => {
+  if (value && typeof value === "object" && value[lang]) {
+    return value[lang] as string;
+  }
+  return value;
+};
+---
+<Section title={t({ es: "Experiencia Laboral", en: "Work Experience" })}>
     <ul>
         {work.map(({name, startDate, endDate, position, summary}) => {
             const startYear = new Date(startDate).getFullYear()
-            const endYear = endDate !== "null" ? new Date(endDate).getFullYear() : "Actualidad"
+            const endYear = 
+                endDate !== null && endDate !== "null" 
+                ? new Date(endDate).getFullYear() 
+                : t({ es: "Actualidad", en: "Present" })
+            
             const years = `${startYear} - ${endYear}`
 
             return(
@@ -19,12 +28,12 @@ import { work } from "@cv"
                         <header>
                             <div>
                                 <h3>{name}</h3>
-                                <h4>{position}</h4>
+                                <h4>{t(position)}</h4>
                             </div>
                             <time>{years}</time>
                         </header>
                         <footer>
-                            <p>{summary}</p>
+                            <p>{t(summary)}</p>
                         </footer>
                     </article>
                 </li>

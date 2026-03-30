@@ -1,13 +1,22 @@
 ---
 import Section from "@/components/Section.astro";
-
 import { basics } from "@cv"
-const {summary} = basics
+
+const lang = (Astro.params.lang || "es") as "es" | "en";
+
+const t = (value: any) => {
+  if (value && typeof value === "object" && value[lang]) {
+    return value[lang] as string;
+  }
+  return value;
+};
+
+const { summary } = basics
 
 ---
 
-<Section title="Sobre mi">
+<Section title={t({ es: "Sobre mí", en: "About me" })}>
     <p>
-        {summary}
+        {t(summary)}
     </p>
 </Section>

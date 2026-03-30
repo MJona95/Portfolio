@@ -1,210 +1,200 @@
-
 {
-    "basics": {
+  "basics": {
+    "name": "Marvin Jonathan Gutierrez Alfaro",
+    "label": {
+      "es": "Diseñador y programador web con 5 años de experiencia autodidacta entuciasta",
+      "en": "Web designer and developer with 5 years of self-taught experience"
+    },
+    "image": "https://avatars.githubusercontent.com/u/146808467?s=400&u=15561395feaf1bf588c22fa5e7de90bb3a230b38&v=4",
+    "email": "mjona5914@gmail.com",
+    "phone": "(505) 5753-3791",
+    "url": "",
+    "summary": {
+      "es": "Egresado de la carrera ingenieria en sistemas de informacion, he participado 4 años consecutivos en hackaton Nicaragua ademas de la expopyme 2020 como spiker, soy un entuciasta de la tecnologia y trabajo constantemente en diversos proyectos personales",
+      "en": "Graduate in Information Systems Engineering. I have participated for 4 consecutive years in Hackathon Nicaragua and in Expopyme 2020 as a speaker. I am passionate about technology and constantly work on various personal projects."
+    },
 
-      "name": "Marvin Jonathan Gutierrez Alfaro",
-      "label": "Diseñador y programador web con 5 años de experiencia autodidacta entuciasta",
-      "image": "https://avatars.githubusercontent.com/u/146808467?s=400&u=15561395feaf1bf588c22fa5e7de90bb3a230b38&v=4",
-      "email": "mjona5914@gmail.com",
-      "phone": "(505) 5753-3791",
-      "url": "",
-      "summary": "Egresado de la carrera ingenieria en sistemas de informacion, he participado 2 años consecutivos en hackaton Nicaragua ademas de la expopyme 2020 como spiker, soy un entuciasta de la tecnologia y trabajo constantemente en diversos proyectos personales",
+    "location": {
+      "address": "",
+      "postalCode": "34000",
+      "city": "Somoto, Madriz",
+      "countryCode": "NI",
+      "region": "Nicaragua"
+    },
 
-      "location": {
-        "address": "",
-        "postalCode": "34000",
-        "city": "Somoto, Madriz",
-        "countryCode": "NI",
-        "region": "Nicaragua"
-      },
-
-      "profiles": [
+    "profiles": [
       {
         "network": "X",
         "username": "Mjona9514",
         "url": "https://x.com/mjona9514"
       },
-
-      { "network": "GitHub",
+      {
+        "network": "GitHub",
         "username": "Mjona95",
         "url": "https://github.com/MJona95"
       },
-
-      { 
+      {
         "network": "LinkedIn",
         "username": "Mjona95",
         "url": "https://www.linkedin.com/in/mjona9514/"
       }
     ]
-    },
+  },
 
-    "work": [{
+  "work": [
+    {
       "name": "INPRHU - Somoto",
-      "position": "Responsable de Comunicacion",
+      "position": {
+        "es": "Responsable de Comunicacion",
+        "en": "Communications Manager"
+      },
       "url": "https://inprhusomoto.org/",
       "startDate": "2021-06-01",
       "endDate": "2022-12-15",
-      "summary": "Responsable de las publicaciones en redes sociales ademas de la elaboracion de contenido multimedia toma de videos y edicion",
+      "summary": {
+        "es": "Responsable de las publicaciones en redes sociales ademas de la elaboracion de contenido multimedia toma de videos y edicion",
+        "en": "Responsible for social media content, multimedia creation, video recording, and editing"
+      },
       "highlights": [
-        "Constante trabajo con cooperantes y voluntarios extranjeros de manera asinconica"
+        {
+          "es": "Constante aprendizaje y desarrollo de habilidades tecnica, comunicativas e innovadoras para implementarlas en mi trabajo",
+          "en": "Constant learning and development of technical, communicative, and innovative skills to implement in my work"
+        }
       ]
     },
     {
       "name": "Inatec Ernesto Che Guevara Somoto",
-      "position": "Docente de Programacion Virtual",
+      "position": {
+        "es": "Docente de Programacion Virtual",
+        "en": "Virtual Programming Instructor"
+      },
       "url": "https://company.com",
       "startDate": "2023-02-01",
       "endDate": "2023-12-15",
-      "summary": "Desempeñe la labor de docente de programacion de manera virtual en diversos lengujes como: JavasCript , PHP y Bases de datos MySQL ademas del framework Angualar.js",
+      "summary": {
+        "es": "Desempeñe la labor de docente de programacion de manera virtual en diversos lengujes como: JavasCript , PHP y Bases de datos MySQL ademas del framework Angualar.js",
+        "en": "Worked as a virtual programming instructor teaching languages such as JavaScript, PHP, and MySQL databases, as well as the Angular.js framework"
+      },
       "highlights": [
-        "Seguimiento mediante herramientas como Trello"
+        {
+          "es": "Seguimiento mediante herramientas como Trello",
+          "en": "Progress tracking using tools like Trello"
+        }
       ]
     },
     {
       "name": "Unan Leon Sede-Somoto",
-      "position": "Docente de Programacion",
+      "position": {
+        "es": "Docente de Programacion",
+        "en": "Programming Instructor"
+      },
       "url": "https://company.com",
       "startDate": "2024-02-01",
       "endDate": "2024-12-20",
-      "summary": "Docente de programacion en diversos lengujes como: ASP.net, JavasCript y Bases de datos SQL, SQL Server ademas de impartir cursos extra curriculares como Node.js y React Native.js",
+      "summary": {
+        "es": "Docente de programacion en diversos lengujes como: ASP.net, JavasCript y Bases de datos SQL, SQL Server ademas de impartir cursos extra curriculares como Node.js y React Native.js",
+        "en": "Programming instructor teaching technologies such as ASP.NET, JavaScript, SQL, and SQL Server, as well as extracurricular courses in Node.js and React Native"
+      },
       "highlights": [
-        "Imparti cursos de Node.js y React.js extra curriculares"
-      ]
-    } 
-  ],
-    "volunteer": [{
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
-    }],
-    "education": [{
-      "institution": "Unan Leon Sede-Somoto",
-      "url": "https://institution.com/",
-      "area": "Ingenieria en Sistemas de informacion",
-      "studyType": "Bachelor",
-      "startDate": "2013-01-01",
-      "endDate": "2019-01-01",
-      "score": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL"
-      ]
-    }],
-    "awards": [{
-      "title": "Award",
-      "date": "2014-11-01",
-      "awarder": "Company",
-      "summary": "There is no spoon."
-    }],
-    "certificates": [{
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Description…"
-    }],
-    "skills": [{
-      "name": "HTML",
-      "level": "Junior",
-      "keywords": [
-        "Desarrollo web", "Frontend"
-      ]
-    },
-    {
-      "name": "CSS",
-      "level": "Junior",
-      "keywords": [
-        "Desarrollo web", "Frontend", "Diseño Responsivo"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Junior",
-      "keywords": [
-        "Desarrollo web", "Backend", "Frontend", "Full Stack"
-      ]
-    },
-    {
-      "name": "Astro",
-      "level": "Junior",
-      "keywords": [
-        "Framework", "Frontend"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Junior",
-      "keywords": [
-        "Library", "Frontend", "Aplication web"
-      ]
-    },
-    {
-      "name": "React Native",
-      "level": "Junior",
-      "keywords": [
-        "Movil Aplication"
-      ]
-    },
-    {
-      "name": "Node",
-      "level": "Junior",
-      "keywords": [
-        "Backend", "JavaSctipt"
-      ]
-    },
-    {
-      "name": "SQL",
-      "level": "Junior",
-      "keywords": [
-        "Backend", "BBDD"
+        {
+          "es": "Imparti cursos de Node.js y React.js extra curriculares",
+          "en": "Delivered extracurricular courses on Node.js and React.js"
+        }
       ]
     }
   ],
-    "languages": [{
-      "language": "Español",
-      "fluency": "Nativo"
-    }],
-    "interests": [{
-      "name": "Vida Saludable",
-      "keywords": [
-        "Buena Alimentacion",
-        "Gym"
-      ]
-    }],
-    "references": [{
-      "name": "Jane Doe",
-      "reference": "Reference…"
-    }],
-    "projects": [
-      {
-        "name": "BussApp",
-        "isActive": false,
-        "description": "Aplicacion con informacion sobre el transporte publico de la ciudad de Somoto",
-        "highlights": [
-          "Experiencia de viaje gratificante"
-        ],
-        "url": "https://github.com/MJona95/BussApp"
+
+  "education": [
+    {
+      "institution": "Unan Leon Sede-Somoto",
+      "url": "https://institution.com/",
+      "area": {
+        "es": "Ingenieria en Sistemas de informacion",
+        "en": "Information Systems Engineering"
       },
-      {
-        "name": "Farmacia Alfaro",
-        "isActive": true,
-        "description": "Single page de un negocio familiar de la ciudad de somoto",
-        "highlights": [
-          "Salud y bienestar social"
-        ],
-        "url": "https://github.com/MJona95/Farmacia-Alfaro"
+      "studyType": "Bachelor",
+      "startDate": "2013-01-01",
+      "endDate": "2019-01-01",
+      "score": "4.0"
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "HTML",
+      "level": {
+        "es": "Junior",
+        "en": "Junior"
       }
-  
+    },
+    {
+      "name": "CSS",
+      "level": {
+        "es": "Junior",
+        "en": "Junior"
+      }
+    },
+    {
+      "name": "JavaScript",
+      "level": {
+        "es": "Junior",
+        "en": "Junior"
+      }
+    }
+  ],
+
+  "languages": [
+    {
+      "language": {
+        "es": "Español",
+        "en": "Spanish"
+      },
+      "fluency": {
+        "es": "Nativo",
+        "en": "Native"
+      }
+    }
+  ],
+
+  "interests": [
+    {
+      "name": {
+        "es": "Vida Saludable",
+        "en": "Healthy Lifestyle"
+      }
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "BussApp",
+      "isActive": false,
+      "description": {
+        "es": "Aplicacion con informacion sobre el transporte publico de la ciudad de Somoto",
+        "en": "Application with information about public transportation in the city of Somoto"
+      },
+      "url": "https://github.com/MJona95/BussApp",
+      "highlights": [
+        {
+          "es": "React Native",
+          "en": "React Native"
+        }
+      ]
+    },
+    {
+      "name": "Farmacia Alfaro",
+      "isActive": true,
+      "description": {
+        "es": "Single page de un negocio familiar de la ciudad de somoto",
+        "en": "Single-page website for a family business in the city of Somoto"
+      },
+      "url": "https://github.com/MJona95/Farmacia-Alfaro",
+      "highlights": [
+        {
+          "es": "Diseño Responsivo",
+          "en": "Responsive Design"
+        }
+      ]
+    }
   ]
-  }
+}

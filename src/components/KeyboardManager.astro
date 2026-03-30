@@ -1,28 +1,42 @@
 ---
 import { basics } from "@cv"
 
+const lang = (Astro.params.lang || "es") as "es" | "en";
+
+const t = (value: any) => {
+  if (value && typeof value === "object" && value[lang]) {
+    return value[lang] as string;
+  }
+  return value;
+};
+
 const { profiles } = basics
 ---
 <footer class="no-print">
-    Pulsa <kbd>Ctrl</kbd> + <kbd>k</kbd> para abrir la paleta de comandos.
+    {t({ es: "Pulsa", en: "Press" })} <kbd>Ctrl</kbd> + <kbd>k</kbd> {t({ es: "para abrir la paleta de comandos.", en: "to open the command palette." })}
 </footer>
 
 <ninja-keys
-    placeholder="Buscar comando" hideBreadcrumbs
+    placeholder={t({ es: "Buscar comando", en: "Search command" })} 
+    hideBreadcrumbs
+    data-print={t({ es: "Imprimir", en: "Print" })}
+    data-actions={t({ es: "Acciones", en: "Actions" })}
 ></ninja-keys>
 
 <script>
     import "ninja-keys"
 
-    const ninja = document.querySelector("ninja-keys")
+    const ninja = document.querySelector("ninja-keys") as any
 
     if(ninja != null) {
+        const { print, actions } = ninja.dataset
+
         ninja.data = [
         {
       id: 'Print',
-      title: 'Imprimir',
+      title: print,
       hotkey: 'ctrl+P',
-      section: 'Acciones',
+      section: actions,
       handler: () => {
         window.print()
       },
