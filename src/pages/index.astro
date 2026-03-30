@@ -1,12 +1,26 @@
 ---
+// src/pages/index.astro
 ---
-<script is:inline>
-	// Detectamos el idioma del navegador
-	const lang = window.navigator.language.split('-')[0] === 'en' ? 'en' : 'es';
-	
-	// Obtenemos la ruta actual para manejar correctamente el despliegue en subcarpetas
-	const pathname = window.location.pathname;
-	const baseUrl = pathname.endsWith('/') ? pathname : pathname + '/';
 
-	window.location.replace(`${baseUrl}${lang}/`);
+<script is:inline>
+  // Detectar el idioma del navegador
+  const lang = window.navigator.language.split('-')[0] === 'en' ? 'en' : 'es';
+  
+  // Obtener la ruta actual (esto ya maneja /Portfolio/ automáticamente)
+  const pathname = window.location.pathname;
+  
+  // Si la ruta termina con /Portfolio/ o /Portfolio, redirigir correctamente
+  let baseUrl = pathname;
+  if (!pathname.endsWith('/')) {
+    baseUrl = pathname + '/';
+  }
+  
+  // Redirigir al idioma correspondiente
+  window.location.replace(`${baseUrl}${lang}/`);
 </script>
+
+<html>
+  <body>
+    <p>Redirigiendo...</p>
+  </body>
+</html>
