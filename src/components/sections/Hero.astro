@@ -9,18 +9,11 @@ import LinkedIn from '@/icons/LinkedIn.astro'
 import X from '@/icons/X.astro'
 import WorldMap from '@/icons/WorldMap.astro'
 
-// 👇 idioma (puede venir de params luego)
-const { lang: paramLang } = Astro.params;
-const browserLang = Astro.request.headers.get("accept-language")?.slice(0, 2);
-const lang = (paramLang || (browserLang === "en" ? "en" : "es")) as "es" | "en";
+import { getLangFromParams, useTranslations } from '@/components/i18n';
 
-// 👇 función mágica
-const t = (value: any) => {
-  if (value && typeof value === "object" && value[lang]) {
-    return value[lang] as string;
-  }
-  return value;
-};
+const { lang: paramLang } = Astro.params;
+const lang = getLangFromParams(paramLang);
+const t = useTranslations(lang);
 
 const { name, label, image, location, profiles, phone, email } = basics;
 

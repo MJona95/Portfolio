@@ -1,17 +1,11 @@
 ---
 import Section from "@/components/Section.astro";
 import { work } from "@cv"
+import { getLangFromParams, useTranslations } from '@/components/i18n';
 
 const { lang: paramLang } = Astro.params;
-const browserLang = Astro.request.headers.get("accept-language")?.slice(0, 2);
-const lang = (paramLang || (browserLang === "en" ? "en" : "es")) as "es" | "en";
-
-const t = (value: any) => {
-  if (value && typeof value === "object" && value[lang]) {
-    return value[lang] as string;
-  }
-  return value;
-};
+const lang = getLangFromParams(paramLang);
+const t = useTranslations(lang);
 ---
 <Section title={t({ es: "Experiencia Laboral", en: "Work Experience" })}>
     <ul>
