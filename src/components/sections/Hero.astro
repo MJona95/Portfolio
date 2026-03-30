@@ -10,7 +10,9 @@ import X from '@/icons/X.astro'
 import WorldMap from '@/icons/WorldMap.astro'
 
 // 👇 idioma (puede venir de params luego)
-const lang = (Astro.params.lang || "es") as "es" | "en";
+const { lang: paramLang } = Astro.params;
+const browserLang = Astro.request.headers.get("accept-language")?.slice(0, 2);
+const lang = (paramLang || (browserLang === "en" ? "en" : "es")) as "es" | "en";
 
 // 👇 función mágica
 const t = (value: any) => {
@@ -82,7 +84,10 @@ const printInfo = [email, phone].filter(Boolean).join(" • ")
                         return(
                             <a
                                 href={url}
-                                title={`Visitar el perfil ${name} en ${network}`}
+                                title={t({
+                                    es: `Visitar el perfil ${name} en ${network}`,
+                                    en: `Visit ${name}'s profile on ${network}`,
+                                })}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

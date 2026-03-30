@@ -2,7 +2,9 @@
 import Section from "../Section.astro";
 import { projects } from "@cv"
 
-const lang = (Astro.params.lang || "es") as "es" | "en";
+const { lang: paramLang } = Astro.params;
+const browserLang = Astro.request.headers.get("accept-language")?.slice(0, 2);
+const lang = (paramLang || (browserLang === "en" ? "en" : "es")) as "es" | "en";
 
 const t = (value: any) => {
   if (value && typeof value === "object" && value[lang]) {
