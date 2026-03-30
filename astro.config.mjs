@@ -1,9 +1,11 @@
-import { defineConfig } from "astro/config";
+// astro.config.mjs
+import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
 export default defineConfig({
-  site: "https://Mjona95.github.io",
-  base: 'Portfolio',
-  integrations: [],
-
+  site: 'https://mjonaf95.github.io',
+  base: '/',  // Para página de usuario, es '/'
+  outDir: './dist',
+  build: {
+    format: 'directory'
+  }
 });
