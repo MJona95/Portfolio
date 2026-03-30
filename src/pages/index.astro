@@ -4,7 +4,9 @@
 	// Detectamos el idioma del navegador
 	const lang = window.navigator.language.split('-')[0] === 'en' ? 'en' : 'es';
 	
-	// Redirigimos a la ruta generada por [lang].astro
-	// Usamos replace para que el usuario no pueda "volver" a la página de carga
-	window.location.replace(`/${lang}/`);
+	// Obtenemos la ruta actual para manejar correctamente el despliegue en subcarpetas
+	const pathname = window.location.pathname;
+	const baseUrl = pathname.endsWith('/') ? pathname : pathname + '/';
+
+	window.location.replace(`${baseUrl}${lang}/`);
 </script>
